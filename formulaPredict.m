@@ -19,6 +19,3 @@ op3 = repmat(rest, 1, 13);
 % Sum the operands
 predictions = op1 + op2 + op3;
 
-% Replace initial score with initscore
-predictions(1) = initScore;
-
