@@ -7,7 +7,7 @@ stdDevs = [0.210; 0.326; 0.747; 0.194; 0.971];
 rest = calculateRest(coeffs, biomarkers, means, stdDevs);
 
 %% Calculate improvement status
-mcid = 9;
+mcid = 7.5;
 imprStatus = improvementStatus(rest, mcid);
 
 %% Calculate prediction at different time points
