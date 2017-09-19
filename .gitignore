@@ -1,2 +1,5 @@
 # Temporary MATLAB files
 *.m~
+
+#MacOS temporary files
+*.DS_Store
