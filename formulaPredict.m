@@ -5,7 +5,8 @@ function [predictions] = formulaPredict(abcd, initScore, rest)
 % S(t) = op1 + op2 + op3
 
 % Time intervals
-t = [0:12];
+numWeeks = 24;
+t = 0:numWeeks;
 
 % Calculate the first part of the sum formula
 op1 = abcd(1) + (abcd(2) * t);
@@ -14,7 +15,7 @@ op1 = abcd(1) + (abcd(2) * t);
 op2 = (abcd(3) + (abcd(4) * t)) * initScore;
 
 % Calculate the third part of the formula
-op3 = repmat(rest, 1, 13);
+op3 = repmat(rest, 1, numWeeks+1);
 
 % Sum the operands
 predictions = op1 + op2 + op3;
