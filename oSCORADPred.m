@@ -19,6 +19,11 @@ end
 
 weekPredictions = formulaPredict(abcd, initScore, rest);
 
+%% Threshold the data
+minimum = 0;
+maximum = 83;
+weekPredictions = thresholdData(weekPredictions, minimum, maximum);
+
 
 
 
