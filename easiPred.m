@@ -2,8 +2,8 @@ function [weekPredictions, imprStatus] = easiPred(biomarkers, isAza, initScore)
 
 %% Calculate rest
 coeffs = [3.72, 2.39, -1.52, -2.67, -3.77];
-means = [0.938; 0.809; 0.025; 2.076; -0.093];
-stdDevs = [0.210; 0.326; 0.747; 0.194; 0.971];
+means = [0.938; 0.809; 1.66; 2.076; -0.093];
+stdDevs = [0.210; 0.326; 0.974; 0.194; 0.971];
 rest = calculateRest(coeffs, biomarkers, means, stdDevs);
 
 %% Calculate improvement status
